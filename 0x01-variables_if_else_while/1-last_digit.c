@@ -8,7 +8,7 @@
 int main(void)
 {
 	 int n;
-	 int idigi;
+	 int idigit;
 
 	 srand(time(0));
 	 n = rand() - RAND_MAX / 2;
@@ -19,7 +19,7 @@ int main(void)
 	 }
 	 else if (idigit == 0)
 	 {
-		 print("Last digit of %d is %d and is 0\n", n, idigit);
+		 printf("Last digit of %d is %d and is 0\n", n, idigit);
 	 }
 	 else if (idigit < 6 && idigit != 0)
 	 {
