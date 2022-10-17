@@ -15,7 +15,7 @@ int main(void)
 	 idigit = n % 10;
 	 if (idigit > 5)
 	 {
-		 printf("Last digit of %d and is greater than 5\n", n, idigit);
+		 printf("Last digit of %d is %d and is greater than 5\n", n, idigit);
 	 }
 	 else if (idigit == 0)
 	 {
