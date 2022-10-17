@@ -8,41 +8,22 @@
 int main(void)
 {
 	 int n;
+	 int idigi;
 
-	         int ldigit;
-
-
-
-		         srand(time(0));
-
-			         n = rand() - RAND_MAX / 2;
-
-				         ldigit = n % 10;
-
-					         if (ldigit > 5)
-
-							         {
-
-									                 printf("Last digit of %d is %d and is greater than 5\n", n, ldigit);
-
-											         }
-
-						         else if (ldigit == 0)
-
-								         {
-
-										                 printf("Last digit of %d is %d and is 0\n", n, ldigit);
-
-												         }
-
-							         else if (ldigit < 6 && ldigit != 0)
-
-									         {
-
-											                 printf("Last digit of %d is %d and is less than 6 and not 0\n", n, ldigit);
-
-													         }
-
-								         return (0);
-
+	 srand(time(0));
+	 n = rand() - RAND_MAX / 2;
+	 idigit = n % 10;
+	 if (idigit > 5)
+	 {
+		 printf("Last digit of %d and is greater than 5\n", n, idigit);
+	 }
+	 else if (idigit == 0)
+	 {
+		 print("Last digit of %d is %d and is 0\n", n, idigit);
+	 }
+	 else if (idigit < 6 && idigit != 0)
+	 {
+		 printf("Last digit of %d is %d and is less than 6 and not 0\n", n, idigit);
+	 }
+	 return (0);
 }
