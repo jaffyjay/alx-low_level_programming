@@ -21,12 +21,12 @@ int main(void)
 					putchar(m);
 					if (i == '7' && j == '8' && m == '9')
 					{
-						break
+						break;
 					}
 					else
 					{
 						putchar(',');
-						putchar(' ')
+						putchar(' ');
 					}
 				}
 			}
