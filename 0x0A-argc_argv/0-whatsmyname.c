@@ -2,15 +2,17 @@
 #include <stdlib.h>
 
 /**
- * main - Prints the name of the program
- * @argc: Number of command line arguments
- * @argv: Array name
+ * main - Entry point
+ * @argc: argument count
+ * @argv: argument vector
  * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-		printf("%s\n", argv[argc * 0]);
+	(void)argc;
 
-		return (0);
+	printf("%s\n", argv[0]);
+
+	exit(EXIT_SUCCESS);
 }
