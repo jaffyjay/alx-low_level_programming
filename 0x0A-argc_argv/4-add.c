@@ -3,7 +3,7 @@
 #include "main.h"
 #include <string.h>
 
-int is_number(char *str);
+int is_number(char *str)
 
 /**
  * main - Entry point
