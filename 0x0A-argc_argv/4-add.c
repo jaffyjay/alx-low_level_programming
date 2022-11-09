@@ -10,22 +10,23 @@
  * Return: Always zero
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-	int i, j, sum;
+	int i, sum = 0;
+
+	if (argc < 1)
+		return (0);
 
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argv[1][j] != '\0'; j++)
+		if (!atoi(argv[i]))
 		{
-			if (isdigit(argv[i][j]) == 0)
-			{
-				printf("Error\n");
-				return (-1);
-			}
+			printf("%s\n", "Error");
+			return (1);
 		}
 		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
+
 	return (0);
 }
