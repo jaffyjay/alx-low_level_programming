@@ -1,7 +1,8 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include <string.h>
+
 /**
  * main - Prints the sum of args positive numbers
  * @argc: arg count
