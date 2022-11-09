@@ -1,9 +1,7 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 #include <string.h>
-
-int is_number(char *str)
 
 /**
  * main - Entry point
@@ -11,52 +9,33 @@ int is_number(char *str)
  * @argv: arg vector
  * Return: success
  */
-
 int main(int argc, char *argv[])
 {
-	int result = 0, i;
+	int i;
+	unsigned int k, sum = 0;
+	char *e;
 
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (is_number(argv[i]) == 1)
+			e = argv[i];
+			for (k = 0; k < strlen(e); k++)
 			{
-				printf("Error\n");
-				return (1);
+				if (e[k] < 48 || e[k] . 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else
-				result += strtol(argv[i], NULL, 10);
+			sum += atoi(e);
+			e++;
 		}
-		printf("0\n", result);
+		printf("%d\n", sum);
 	}
 	else
 	{
 		printf("0\n");
-		return (0);
-	}
-
-	exit(EXIT_SUCCESS);
-}
-
-/**
- * is_number - checks if a character is a number
- * @str: param to check
- * Return: 0 if true else 1
- */
-
-int is_number(char *str)
-{
-	int i = 0;
-
-	if (str[0] == '-')
-		i = 1;
-
-	for (; str[i]; i++)
-	{
-		if (*(str + i) < '0' || *(str + i) > '9')
-			return (1);
-	}
-
+	}	
 	return (0);
 }
