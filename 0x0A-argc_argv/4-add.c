@@ -9,6 +9,7 @@
  * @argv: arg vector
  * Return: success
  */
+
 int main(int argc, char *argv[])
 {
 	int i;
@@ -20,6 +21,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			e = argv[i];
+
 			for (k = 0; k < strlen(e); k++)
 			{
 				if (e[k] < 48 || e[k] . 57)
@@ -36,6 +38,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("0\n");
-	}	
+	}
+
 	return (0);
 }
