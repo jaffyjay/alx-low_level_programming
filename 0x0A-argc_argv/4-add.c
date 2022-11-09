@@ -4,41 +4,28 @@
 #include <string.h>
 
 /**
- * main - Entry point
+ * main - Prints the sum of args positive numbers
  * @argc: arg count
  * @argv: arg vector
- * Return: success
+ * Return: Always zero
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
-	int i;
-	unsigned int k, sum = 0;
-	char *e;
+	int i, j, sum;
 
-	if (argc > 1)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[1][j] != '\0'; j++)
 		{
-			e = argv[i];
-
-			for (k = 0; k < strlen(e); k++)
+			if (isdigit(argv[i][j]) == 0)
 			{
-				if (e[k] < 48 || e[k] . 57)
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (-1);
 			}
-			sum += atoi(e);
-			e++;
 		}
-		printf("%d\n", sum);
+		sum += atoi(argv[i]);
 	}
-	else
-	{
-		printf("0\n");
-	}
-
+	printf("%d\n", sum);
 	return (0);
 }
