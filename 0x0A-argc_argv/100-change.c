@@ -4,7 +4,7 @@
 /**
  * main - entry
  * @argc: holds the number
- * @argc: the array pointer that holds the argument passed
+ * @argv: the array pointer that holds the argument passed
  * Return: 0
  */
 
